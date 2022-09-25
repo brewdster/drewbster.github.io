@@ -21,19 +21,6 @@
         }
     }
 
-  function srch2()
-    {
-      var srch2 = prompt("Search for?").replace(/ /g,"+");
-      if (srch2)
-        {
-            location.replace ('https://www.bing.com/search?q=' + srch2);
-        }
-      else
-        {
-            location.replace('https://www.bing.com/');
-        }
-    }
-
   function gsrch()
     {
       var gsrch = prompt("Search for?").replace(/ /g,"+");
@@ -409,21 +396,20 @@
                     <tr>
                       <td width="200" height="50" align="center">
                         <div class="dropdown">
-                          <button class="dropbtn" onclick="search()"><a href="#" style="color: #FFFFFF; text-decoration: none">Search</a></button>
+                          <button class="dropbtn" onclick="gsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Search</a></button>
                           <div class="dropdown-content">
+                            <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
+                            <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
+                            <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
+                            <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
                             <a href="#" onclick="wikisrch()"><span class="bullet">🔹</span>  Wikipedia</a>
-                            <a href="#" onclick="srch2()"><span class="bullet">🔹</span>  Microsoft Web</a>
+                            <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
+                            <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
+                            <a href="#" onclick="search()"><span class="bullet">🔹</span>  Microsoft Web</a>
                             <a href="#" onclick="bimgsrch()"><span class="bullet">🔹</span>  Microsoft Images</a>
                             <a href="#" onclick="bvidsrch()"><span class="bullet">🔹</span>  Microsoft Videos</a>
                             <a href="#" onclick="bmapsrch()"><span class="bullet">🔹</span>  Microsoft Maps</a>
                             <a href="https://translate.bing.com/"><span class="bullet">🔹</span>  Microsoft Translate</a>
-                            <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
-                            <a href="#" onclick="gsrch()"><span class="bullet">🔹</span>  Google Web</a>
-                            <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
-                            <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
-                            <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
-                            <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
-                            <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
                           </div>
                         </div>
                       </td>
