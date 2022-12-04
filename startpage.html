@@ -232,6 +232,19 @@
         }
     }
 
+  function dicsrch()
+    {
+      var dicsrch = prompt("What word?").toLowerCase().replace(/ /g,"+");
+      if (dicsrch)
+        {
+            location.replace ('https://www.dictionary.com/browse/' + dicsrch);
+        }
+      else
+        {
+            location.replace('https://www.bing.com/videos/browsing?vrci=0');
+        }
+    }
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -404,8 +417,9 @@
                             <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
                             <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                             <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
-                            <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
                             <a href="#" onclick="wikisrch()"><span class="bullet">🔹</span>  Wikipedia</a>
+                            <a href="#" onclick="dicsrch()"><span class="bullet">🔹</span>  Dictionary</a>
+                            <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
                             <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
                             <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
                             <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Microsoft Bing</a>
