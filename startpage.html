@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230104-->
+<!--Drewbster / 20230109-->
 <html>
 <head>
 
@@ -13,7 +13,7 @@
       var dksrch = prompt("DuckDuckGo search for?").replace(/ /g,"+");
       if (dksrch)
         {
-            location.replace ('https://www.duckduckgo.com/?q=' + dksrch);
+            location.replace ('https://www.duckduckgo.com/?q=' + dksrch + '&ia=web');
         }
       else
         {
@@ -100,6 +100,19 @@
       else
         {
             location.replace('https://images.google.com/');
+        }
+    }
+
+  function dimgsrch()
+    {
+      var dimgsrch = prompt("Search image?").replace(/ /g,"+");
+      if (dimgsrch)
+        {
+            location.replace ('https://www.duckduckgo.com/?q=' + dimgsrch + '&iax=images&ia=images');
+        }
+      else
+        {
+            location.replace('https://www.duckduckgo.com/');
         }
     }
 
@@ -243,6 +256,19 @@
       else
         {
             location.replace('https://www.bing.com/videos/browsing?vrci=0');
+        }
+    }
+
+  function dvidsrch()
+    {
+      var dvidsrch = prompt("Search image?").replace(/ /g,"+");
+      if (dvidsrch)
+        {
+            location.replace ('https://www.duckduckgo.com/?q=' + dvidsrch + '&iax=videos&ia=videos');
+        }
+      else
+        {
+            location.replace('https://www.duckduckgo.com/');
         }
     }
 
@@ -404,6 +430,8 @@
                         <div class="dropdown">
                           <button class="dropbtn" onclick="dksrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Search</a></button>
                           <div class="dropdown-content">
+                            <a href="#" onclick="dimgsrch()"><span class="bullet">🔹</span>  DuckDuckGo Images</a>
+                            <a href="#" onclick="dvidsrch()"><span class="bullet">🔹</span>  DuckDuckGo Videos</a>
                             <a href="#" onclick="gsrch()"><span class="bullet">🔹</span>  Google Web</a>
                             <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
                             <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
