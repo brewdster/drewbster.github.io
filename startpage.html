@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230110-->
+<!--Drewbster / 20230115-->
 <html>
 <head>
 
@@ -109,6 +109,19 @@
       if (dimgsrch)
         {
             location.replace ('https://www.duckduckgo.com/?q=' + dimgsrch + '&iax=images&ia=images');
+        }
+      else
+        {
+            location.replace('https://www.duckduckgo.com/');
+        }
+    }
+
+  function dmapsrch()
+    {
+      var dmapsrch = prompt("Search street address?").replace(/ /g,"+");
+      if (dmapsrch)
+        {
+            location.replace ('https://www.duckduckgo.com/?q=' + dmapsrch + 'ia=web&iaxm=maps');
         }
       else
         {
@@ -432,6 +445,7 @@
                           <div class="dropdown-content">
                             <a href="#" onclick="dimgsrch()"><span class="bullet">🔹</span>  DuckDuckGo Images</a>
                             <a href="#" onclick="dvidsrch()"><span class="bullet">🔹</span>  DuckDuckGo Videos</a>
+                            <a href="#" onclick="dmapsrch()"><span class="bullet">🔹</span>  DuckDuckGo Maps</a>
                             <a href="#" onclick="wikisrch()"><span class="bullet">🔹</span>  Wikipedia</a>
                             <a href="#" onclick="dicsrch()"><span class="bullet">🔹</span>  Dictionary</a>
                             <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
