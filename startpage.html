@@ -10,7 +10,7 @@
 
   function dksrch()
     {
-      var dksrch = prompt("DuckDuckGo search for?").replace(/ /g,"+");
+      var dksrch = prompt("DuckDuckGo search for?").replace(/&/g,"%26").replace(/ /g,"+");
       if (dksrch)
         {
             location.replace ('https://www.duckduckgo.com/?q=' + dksrch + '&ia=web');
@@ -23,10 +23,10 @@
 
   function bsrch()
     {
-      var bsrch = prompt("Bing search for?").replace(/ /g,"+");
+      var bsrch = prompt("Bing search for?").replace(/&/g,"%26").replace(/ /g,"+");
       //var srchtxt = 'https://www.bing.com/search?q=' + (window.location.search);
       //alert (srchtxt);
-      //location.href =  'https://www.bing.com/search?q=' + srch;
+      //location.href =  'https://www.bing.com/search?q=' + bsrch;
       //window.open(myurl);
       if (bsrch)
         {
@@ -40,7 +40,7 @@
 
   function gsrch()
     {
-      var gsrch = prompt("Google search for?").replace(/ /g,"+");
+      var gsrch = prompt("Google search for?").replace(/&/g,"%26").replace(/ /g,"+");
       if (gsrch)
         {
             location.replace ('https://www.google.com/search?q=' + gsrch);
@@ -53,7 +53,7 @@
 
   function mplsrch()
     {
-      var mplsrch = prompt("Search for? (DVD/BD)").replace(/ /g,"+");
+      var mplsrch = prompt("Search for? (DVD/BD)").replace(/&/g,"%26").replace(/ /g,"+");
       if (mplsrch)
         {
             location.replace ('https://markham.bibliocommons.com/v2/search?custom_edit=false&query=title%3A%28' + mplsrch + '%29formatcode%3A%28BLURAY+OR+DVD+%29&searchType=bl&suppress=true');
@@ -66,7 +66,7 @@
 
   function ytsrch()
     {
-      var ytsrch = prompt("Search for?").replace(/ /g,"+").replace(/&/g,"and");
+      var ytsrch = prompt("Search for?").replace(/&/g,"%26").replace(/ /g,"+");
       if (ytsrch)
         {
             location.replace ('https://www.youtube.com/results?search_query=' + ytsrch);
@@ -79,7 +79,7 @@
 
   function bimgsrch()
     {
-      var bimgsrch = prompt("Search image?").replace(/ /g,"+");
+      var bimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+");
       if (bimgsrch)
         {
             location.replace ('https://images.bing.com/search?q=' + bimgsrch);
@@ -92,7 +92,7 @@
 
   function gimgsrch()
     {
-      var gimgsrch = prompt("Search image?").replace(/ /g,"+");
+      var gimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+");
       if (gimgsrch)
         {
             location.replace ('https://www.google.com/search?tbm=isch&q=' + gimgsrch);
@@ -105,7 +105,7 @@
 
   function dimgsrch()
     {
-      var dimgsrch = prompt("Search image?").replace(/ /g,"+");
+      var dimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+");
       if (dimgsrch)
         {
             location.replace ('https://www.duckduckgo.com/?q=' + dimgsrch + '&iax=images&ia=images');
@@ -118,7 +118,7 @@
 
   function dmapsrch()
     {
-      var dmapsrch = prompt("Search street address?").replace(/ /g,"+");
+      var dmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
       if (dmapsrch)
         {
             location.replace ('https://www.duckduckgo.com/?q=' + dmapsrch + '&ia=web&iaxm=maps');
@@ -131,7 +131,7 @@
 
   function bmapsrch()
     {
-      var bmapsrch = prompt("Search street address?").replace(/ /g,"+");
+      var bmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
       if (bmapsrch)
         {
             location.replace ('https://www.bing.com/maps?q=' + bmapsrch);
@@ -144,7 +144,7 @@
 
   function gmapsrch()
     {
-      var gmapsrch = prompt("Search street address?").replace(/ /g,"+");
+      var gmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
       if (gmapsrch)
         {
             location.replace ('https://www.google.com/maps?q=' + gmapsrch);
@@ -157,7 +157,7 @@
 
   function wikisrch()
       {
-        var wikisrch = prompt("Search for?").replace(/ /g,"_");
+        var wikisrch = prompt("Search for?").replace(/&/g,"%26").replace(/ /g,"_");
         if (wikisrch)
           {
               location.replace ('https://en.wikipedia.org/wiki/' + wikisrch);
@@ -170,7 +170,7 @@
 
   function amzsrch()
     {
-      var amzsrch = prompt("Item?").toLowerCase().replace(/ /g,"+");
+      var amzsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (amzsrch)
         {
             location.replace ('https://www.amazon.ca/s?k=' + amzsrch);
@@ -183,7 +183,7 @@
 
   function alisrch()
     {
-      var alisrch = prompt("Item?").toLowerCase().replace(/ /g,"+");
+      var alisrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (alisrch)
         {
             location.replace ('https://www.aliexpress.com/af/' + alisrch + '.html');
@@ -196,7 +196,7 @@
 
   function bestsrch()
     {
-      var bestsrch = prompt("Item?").toLowerCase().replace(/ /g,"+");
+      var bestsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (bestsrch)
         {
             location.replace ('https://www.bestbuy.ca/en-ca/search?search=' + bestsrch);
@@ -222,7 +222,7 @@
 
   function aemsrch()
     {
-      var aemsrch = prompt("Folder?").toLowerCase().replace(/ /g,"-");
+      var aemsrch = prompt("Folder?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
       if (aemsrch)
         {
             location.replace ('https://author-beta.airmiles.ca/assets.html/content/dam/airmiles/campaigns/' + aemsrch);
@@ -261,7 +261,7 @@
 
   function bvidsrch()
     {
-      var bvidsrch = prompt("Which video?").toLowerCase().replace(/ /g,"+");
+      var bvidsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (bvidsrch)
         {
             location.replace ('https://www.bing.com/videos/search?q=' + bvidsrch);
@@ -274,7 +274,7 @@
 
   function dvidsrch()
     {
-      var dvidsrch = prompt("Which video?").replace(/ /g,"+");
+      var dvidsrch = prompt("Which video?").replace(/&/g,"%26").replace(/ /g,"+");
       if (dvidsrch)
         {
             location.replace ('https://www.duckduckgo.com/?q=' + dvidsrch + '&iax=videos&ia=videos');
@@ -287,7 +287,7 @@
 
   function dicsrch()
     {
-      var dicsrch = prompt("What word?").toLowerCase().replace(/ /g,"+");
+      var dicsrch = prompt("What word?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (dicsrch)
         {
             location.replace ('https://www.dictionary.com/browse/' + dicsrch);
