@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230203-->
+<!--Drewbster / 20230211-->
 <html>
 <head>
 
@@ -183,10 +183,10 @@
 
   function alisrch()
     {
-      var alisrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      var alisrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
       if (alisrch)
         {
-            location.replace ('https://www.aliexpress.com/af/' + alisrch + '.html');
+            location.replace ('https://www.aliexpress.com/w/wholesale-' + alisrch + '.html');
         }
       else
         {
