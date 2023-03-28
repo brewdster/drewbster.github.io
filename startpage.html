@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230324-->
+<!--Drewbster / 20230327-->
 <html>
 <head>
 
@@ -299,6 +299,19 @@
       else
         {
             location.replace('https://www.bing.com/videos/browsing?vrci=0');
+        }
+    }
+
+  function tmsrch()
+    {
+      var tmsrch = prompt("Item?").toLowerCase();
+      if (tmsrch)
+        {
+            location.replace ('https://www.temu.com/search_result.html?search_key=' + tmsrch);
+        }
+      else
+        {
+            location.replace('https://www.temu.com/');
         }
     }
 
@@ -736,6 +749,7 @@ body
                             <a href="#" onclick="amzsrch()"><span class="bullet">🔹</span>  Amazon</a>
                             <a href="#" onclick="alisrch()"><span class="bullet">🔹</span>  AliExpress</a>
                             <a href="#" onclick="walsrch()"><span class="bullet">🔹</span>  Walmart</a>
+                            <a href="#" onclick="tmsrch()"><span class="bullet">🔹</span>  Temu</a>
                             <a href="#" onclick="stplsrch()"><span class="bullet">🔹</span>  Staples</a>
                             <a href="#" onclick="bestsrch()"><span class="bullet">🔹</span>  BestBuy</a>
                             <a href="https://www.kijiji.ca/b-gta-greater-toronto-area/mechanical-keyboard/k0l1700272?dc=true"><span class="bullet">🔹</span>  Kijiji</a>
