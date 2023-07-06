@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230628-->
+<!--Drewbster / 20230706-->
 <html>
 <head>
 
@@ -130,6 +130,19 @@
       else
         {
             location.replace('https://duckduckgo.com/?q=Asia&ia=web&iaxm=maps');
+        }
+    }
+
+  function omapsrch()
+    {
+      var omapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/,/g,"%2C");
+      if (omapsrch)
+        {
+            location.replace ('https://www.openstreetmap.org/search?query=' + omapsrch);
+        }
+      else
+        {
+            location.replace('https://www.openstreetmap.org/#map=3/42.42/79.45');
         }
     }
 
@@ -475,6 +488,7 @@ body
                             <a href="#" onclick="wikisrch()"><span class="bullet">🔹</span>  Wikipedia</a>
                             <a href="#" onclick="dicsrch()"><span class="bullet">🔹</span>  Dictionary</a>
                             <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
+                            <a href="#" onclick="omapsrch()"><span class="bullet">🔹</span>  OpenStreetMap</a>
                             <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
                             <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                             <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
