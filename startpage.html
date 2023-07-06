@@ -276,19 +276,6 @@
         }
     }
 
-  function bvidsrch()
-    {
-      var bvidsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
-      if (bvidsrch)
-        {
-            location.replace ('https://www.bing.com/videos/search?q=' + bvidsrch);
-        }
-      else
-        {
-            location.replace('https://www.bing.com/videos/browsing?vrci=0');
-        }
-    }
-
   function dvidsrch()
     {
       var dvidsrch = prompt("Which video?").replace(/&/g,"%26").replace(/ /g,"+");
@@ -497,7 +484,6 @@ body
                             <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
                             <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Microsoft Bing</a>
                             <a href="#" onclick="bimgsrch()"><span class="bullet">🔹</span>  Microsoft Images</a>
-                            <a href="#" onclick="bvidsrch()"><span class="bullet">🔹</span>  Microsoft Videos</a>
                             <a href="#" onclick="bmapsrch()"><span class="bullet">🔹</span>  Microsoft Maps</a>
                             <a href="https://translate.bing.com/"><span class="bullet">🔹</span>  Microsoft Translate</a>
                           </div>
