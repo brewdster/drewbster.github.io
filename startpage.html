@@ -237,19 +237,6 @@
         }
     }
 
-  function aemsrch()
-    {
-      var aemsrch = prompt("Folder?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
-      if (aemsrch)
-        {
-            location.replace ('https://author-beta.airmiles.ca/assets.html/content/dam/airmiles/campaigns/' + aemsrch);
-        }
-      else
-        {
-            location.replace('https://author-beta.airmiles.ca/libs/granite/core/content/login.html');
-        }
-    }
-
   function imdbsrch()
     {
       var imdbsrch = prompt("Movie title?");
@@ -291,7 +278,7 @@
 
   function dicsrch()
     {
-      var dicsrch = prompt("What word?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      var dicsrch = prompt("What word?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
       if (dicsrch)
         {
             location.replace ('https://www.dictionary.com/browse/' + dicsrch);
