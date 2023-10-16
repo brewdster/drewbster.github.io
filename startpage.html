@@ -302,6 +302,19 @@
         }
     }
 
+  function bbsrch()
+    {
+      var bbsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (bbsrch)
+        {
+            location.replace ('https://search.bilibili.com/all?keyword=' + bbsrch);
+        }
+      else
+        {
+            location.replace('https://search.bilibili.com/');
+        }
+    }
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -682,7 +695,7 @@ body
                             <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><span class="bullet">🔹</span>  Youtube News</a>
                             <a href="https://www.youtube.com/feed/trending"><span class="bullet">🔹</span>  Youtube Trending</a>
                             <a href="https://accounts.google.com/signin"><span class="bullet">🔹</span>  Youtube Sign in</a>
-                            <a href="https://www.bilibili.com/"><span class="bullet">🔹</span>   哔哩哔哩 Bilibili</a>
+                            <a href="#" onclick="bbsrch()"><span class="bullet">🔹</span>   哔哩哔哩 Bilibili</a>
                           </div>
                         </div>
                       </td>
