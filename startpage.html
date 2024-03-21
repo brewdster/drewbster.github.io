@@ -328,6 +328,19 @@
         }
     }
 
+  function airsrch()
+    {
+      var airsrch = prompt("Item?");
+      if (airsrch)
+        {
+            location.replace ('https://rewards.airmiles.ca/merchandise/search?q=' + airsrch);
+        }
+      else
+        {
+            location.replace('https://rewards.airmiles.ca/merchandise');
+        }
+    }
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -786,6 +799,7 @@ body
                             <a href="#" onclick="alisrch()"><span class="bullet">🔹</span>  AliExpress</a>
                             <a href="#" onclick="walsrch()"><span class="bullet">🔹</span>  Walmart</a>
                             <a href="#" onclick="tmsrch()"><span class="bullet">🔹</span>  Temu</a>
+                            <a href="#" onclick="airsrch()"><span class="bullet">🔹</span>  Air Miles</a>
                             <a href="#" onclick="stplsrch()"><span class="bullet">🔹</span>  Staples</a>
                             <a href="#" onclick="bestsrch()"><span class="bullet">🔹</span>  BestBuy</a>
                             <a href="https://www.kijiji.ca/b-gta-greater-toronto-area/mechanical-keyboard/k0l1700272?dc=true"><span class="bullet">🔹</span>  Kijiji</a>
@@ -1019,9 +1033,9 @@ body
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
-              <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"><img src="images/ef_logo.png" width="65"></td>
+              <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"></td>
               <td width="37%"></td>
-              <td style="font-size: 30px" class="copy-shadow" width="14%" align="center"></td>
+              <td style="font-size: 30px" class="copy-shadow" width="14%" align="center"><img src="images/ef_logo.png" width="65"></td>
               <td widht="37%"></td>
               <td style="font-size: 30px" class="copy-shadow" width="6%" align="left"></td>
             </tr>
