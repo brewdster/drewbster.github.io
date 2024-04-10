@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240330-->
+<!--Drewbster / 20240410-->
 <html>
 <head>
 
@@ -341,6 +341,19 @@
         }
     }
 
+  function gfsrch()
+    {
+      var gfsrch = prompt("Which font?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (gfsrch)
+        {
+            location.replace ('https://fonts.google.com/?query=' + gfsrch);
+        }
+      else
+        {
+            location.replace('https://fonts.google.com/');
+        }
+    }
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -525,7 +538,7 @@ body
                             <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
                             <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                             <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
-                            <a href="https://fonts.google.com/"><span class="bullet">🔹</span>  Google Fonts</a>
+                            <a href="#" onclick="gfsrch()"><span class="bullet">🔹</span>  Google Fonts</a>
                             <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
                             <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
                             <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Microsoft Bing</a>
