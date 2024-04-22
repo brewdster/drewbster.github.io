@@ -3,6 +3,7 @@
   <defs>
     <style>
 
+/* latin-ext */
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
