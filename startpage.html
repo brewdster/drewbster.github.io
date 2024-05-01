@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240410-->
+<!--Drewbster / 20240501-->
 <html>
 <head>
 
@@ -354,6 +354,19 @@
         }
     }
 
+  function yfsrch()
+    {
+      var yfsrch = prompt("Which stock? (prefix index with ^ (e.g. ^DJI)").toUpperCase();
+      if (yfsrch)
+        {
+            location.replace ('https://finance.yahoo.com/chart/' + yfsrch);
+        }
+      else
+        {
+            location.replace('https://finance.yahoo.com/');
+        }
+    }
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -483,8 +496,8 @@ body
       <td width="6%" valign="top" style="padding: 100px 0px 0px 10px; font-size: 18px; font-weight: 500; line-height: 20px; color: #2E2E2E" class="copy-shadow2">
         <div align="center"><br><br><br><img src="images/ElliefanV_H&G.svg" width="65"></div>
         <p align="left">Nodes</p>
-        <p align="left">▪  <a href="https://brewdster.github.io/homepage/startpage_work.html" style="color: #00308F">Work</a></p>
-        <p align="left" class="copy-shadow1">▪  <a href="https://brewdster.github.io/homepage/startpage_misc.html" style="color: #FFFFFF">Misc</a></p>
+        <p align="left">▪  <a href="#" style="color: #00308F">Work</a></p>
+        <p align="left" class="copy-shadow1">▪  <a href="#" style="color: #FFFFFF">Misc</a></p>
       </td>
 
       <td width="94%">
@@ -730,7 +743,7 @@ body
                             <a href="https://myaccount.enbridgegas.com/sign-in"><span class="bullet">🔹</span>  Enbridge</a>
                             <a href="https://sid.dmcihomes.com/"><span class="bullet">🔹</span>  DMCI Homes</a>
                             <a href="https://www.fidelity.ca/"><span class="bullet">🔹</span>  Fidelity</a>
-                            <a href="https://finance.yahoo.com/"><span class="bullet">🔹</span>  Yahoo Finance</a>
+                            <a href="#" onclick="yfsrch()"><span class="bullet">🔹</span>  Yahoo Finance</a>
                             <a href="https://atlas.cid.harvard.edu/explore?country=43&queryLevel=location&product=undefined&year=2020&productClass=HS&target=Partner&partner=undefined&startYear=undefined"><span class="bullet">🔹</span>  The Economic Atlas</a>
                             <a href="https://ar-morningstar-com.ezproxy.markham.ca/mirc/home.aspx"><span class="bullet">🔹</span>  Morningstar</a>
                             <a href="https://www.google.com/search?source=hp&amp;ei=PlbWX-HnKN2F9PwPxIugyAE&amp;q=currency+converter"><span class="bullet">🔹</span>  Currencies</a>
