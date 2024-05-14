@@ -64,15 +64,11 @@
         stroke-width: .3px;
       }
 
-      .cls-7, .cls-6 {
+      .cls-6 {
         fill: #1e5ca4;
       }
 
-      .cls-4 {
-        fill: gray;
-      }
-
-      .cls-5 {
+      .cls-4, .cls-5, .cls-7 {
         fill: gray;
       }
 

@@ -64,11 +64,11 @@
         stroke-width: .3px;
       }
 
-      .cls-7, .cls-6 {
+      .cls-6 {
         fill: #1e5ca4;
       }
 
-      .cls-4 {
+      .cls-4, .cls-5, .cls-7 {
         fill: gray;
       }
 
@@ -76,9 +76,6 @@
         font-size: 14.77px;
       }
 
-      .cls-5 {
-        fill: gray;
-      }
     </style>
   </defs>
   <g id="Elliefan">
