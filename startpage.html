@@ -276,6 +276,19 @@
         }
     }
 
+  function bvidsrch()
+    {
+      var bvidsrch = prompt("Which video?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (bvidsrch)
+        {
+            location.replace ('https://www.bing.com/videos/search?q=' + bvidsrch
+        }
+      else
+        {
+            location.replace('https://www.bing.com/videos/');
+        }
+    }
+
   function dicsrch()
     {
       var dicsrch = prompt("What word?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
@@ -285,7 +298,7 @@
         }
       else
         {
-            location.replace('https://www.bing.com/videos/browsing?vrci=0');
+            location.replace('https://www.dictionary.com/');
         }
     }
 
