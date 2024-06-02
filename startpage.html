@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240530-->
+<!--Drewbster / 20240602-->
 <html>
 <head>
 
@@ -278,7 +278,7 @@
 
   function bvidsrch()
     {
-      var bvidsrch = prompt("Which video?").replace(/&/g,"%26").replace(/ /g,"+");
+      var bvidsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (bvidsrch)
         {
             location.replace ('https://www.bing.com/videos/search?q=' + bvidsrch);
@@ -298,7 +298,7 @@
         }
       else
         {
-            location.replace('https://www.dictionary.com/');
+            location.replace('https://www.bing.com/videos/browsing?vrci=0');
         }
     }
 
@@ -372,7 +372,7 @@
       var yfsrch = prompt("Which stock? (prefix index with ^ - e.g. ^DJI)").toUpperCase();
       if (yfsrch)
         {
-            location.replace ('https://finance.yahoo.com/quote/' + yfsrch);
+            location.replace ('https://finance.yahoo.com/chart/' + yfsrch);
         }
       else
         {
@@ -500,7 +500,6 @@ body
 
 </head>
 
-
 <body style="background-image: url(images/backart.jpg); background-repeat: no-repeat; background-size: cover" bgcolor="#EA3C5C">
 
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -557,18 +556,25 @@ body
   <tbody>
     <tr>
 
-      <td width="25%">
+<td width="7.35%"></td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo5.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo5.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
                         <div class="dropdown">
-                          <button class="dropbtn" onclick="dksrch()"><a href="#" style="font-size: 17px; color: #FFFFFF; text-decoration: none">   DuckDuckGo</a></button>
+                          <button class="dropbtn" onclick="gsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">   DuckDuckGo</a></button>
                           <div class="dropdown-content">
+                            <a href="#" onclick="dksrch()"><span class="bullet">🔹</span>  DuckDuckGo Web</a>
                             <a href="#" onclick="dimgsrch()"><span class="bullet">🔹</span>  DuckDuckGo Images</a>
                             <a href="#" onclick="dvidsrch()"><span class="bullet">🔹</span>  DuckDuckGo Videos</a>
                             <a href="#" onclick="dmapsrch()"><span class="bullet">🔹</span>  DuckDuckGo Maps</a>
@@ -577,7 +583,6 @@ body
                             <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
                             <a href="#" onclick="omapsrch()"><span class="bullet">🔹</span>  OpenStreetMap</a>
                             <a href="https://maps.yango.com/?ll=60.513598%2C32.618592&z=3"><span class="bullet">🔹</span>  Yango Maps</a>
-                            <a href="#" onclick="gsrch()"><span class="bullet">🔹</span>  Google Web</a>
                             <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
                             <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                             <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
@@ -601,12 +606,12 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo10.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo10.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -643,13 +648,31 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
 
-      <td width="25%">
+<td width="12.7%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/mk_cta.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/mk_cta.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -685,23 +708,15 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo4.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo13.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
-                      <td width="200" height="50" align="center">
-                        <div class="dropdown">
-                          <button class="dropbtn"><a href="https://www.outlook.com/" style="color: #FFFFFF; text-decoration: none">  HoTMaiL</a></button>
-                          <div class="dropdown-content">
-                            <a href="https://www.gmail.com/"><span class="bullet">🔹</span>  GMail</a>
-                            <a href="https://mail.yahoo.com/"><span class="bullet">🔹</span>  Yahoo Mail</a>
-                          </div>
-                        </div>
-                      </td>
+                      <td width="200" height="50" align="center"><div><a href="https://onedrive.live.com/" style="color: #FFFFFF; display: inline-block; font-family: 'Poppins', Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 500; line-height: 48px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">    Onedrive</a></div></td>
                     </tr>
                   </tbody>
                 </table>
@@ -710,6 +725,12 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="7.25%"></td>
 
     </tr>
   </tbody>
@@ -721,12 +742,18 @@ body
   <tbody>
     <tr>
 
-      <td width="25%">
+<td width="7.35%"></td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo12.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo12.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -754,12 +781,12 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://brewdster.github.io/homepage/images/startpage_logo9.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://brewdster.github.io/homepage/images/startpage_logo9.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -790,13 +817,31 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
 
-      <td width="25%">
+<td width="12.7%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo2.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo2.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -822,12 +867,12 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo11.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo11.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -849,6 +894,13 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="7.25%"></td>
+
     </tr>
   </tbody>
 </table>
@@ -859,12 +911,18 @@ body
   <tbody>
     <tr>
 
-      <td width="25%">
+<td width="7.35%"></td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo8.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo8.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center">
@@ -891,15 +949,23 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo13.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/startpage_logo4.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
-                      <td width="200" height="50" align="center"><div><a href="https://onedrive.live.com/" style="color: #FFFFFF; display: inline-block; font-family: 'Poppins', Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 500; line-height: 48px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">    Onedrive</a></div></td>
+                      <td width="200" height="50" align="center">
+                        <div class="dropdown">
+                          <button class="dropbtn"><a href="https://www.outlook.com/" style="color: #FFFFFF; text-decoration: none">  HoTMaiL</a></button>
+                          <div class="dropdown-content">
+                            <a href="https://www.gmail.com/"><span class="bullet">🔹</span>  GMail</a>
+                            <a href="https://mail.yahoo.com/"><span class="bullet">🔹</span>  Yahoo Mail</a>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -908,13 +974,31 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
 
-      <td width="25%">
+<td width="12.7%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background: linear-gradient(180deg, #C8FFFF, #3285FC, #3255FA, #3285FC,  #C8FFFF)" cellspacing="0" cellpadding="0" border="0" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background: linear-gradient(180deg, #C8FFFF, #3285FC, #3255FA, #3285FC,  #C8FFFF)" cellspacing="0" cellpadding="0" border="0" align="left">
                   <tbody>
                     <tr>
                       <td width="200" height="50" align="center"><div><a href="https://archive.org" style="color: #FFFFFF; display: inline-block; font-family: 'Poppins', Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 500; line-height: 48px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">Internet Archive</a></div></td>
@@ -927,12 +1011,12 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_red_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_red_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
                       <td width="50" height="50" align="right"><a href="https://www.qhanzi.com/" style="text-decoration: none"><img src="images/china-icon.png" width="38" height="38"></a></td>
@@ -956,6 +1040,12 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="7.25%"></td>
 
     </tr>
   </tbody>
@@ -967,12 +1057,18 @@ body
   <tbody>
     <tr>
 
-      <td width="25%">
+<td width="7.35%"></td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_blue_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_blue_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="47" height="50" align="right"><a href="#" style="text-decoration: none"><img src="images/tools1.png" width="35" height="35"></a></td>
@@ -996,12 +1092,12 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
                       <td width="47" height="50" align="right"><a href="#" style="text-decoration: none"><img src="images/sampleicon1.png" width="35" height="35"></a></td>
@@ -1022,13 +1118,31 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
 
-      <td width="25%">
+<td width="12.7%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="36.35%">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 0px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #151515; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #151515; background-image: url(images/btn_grey_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #151515; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #151515; background-image: url(images/btn_grey_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
                   <tbody>
                     <tr>
                       <td width="47" height="50" align="right"><a href="#" style="text-decoration: none"><img src="images/shopping-icon.png" width="35" height="35"></a></td>
@@ -1050,12 +1164,12 @@ body
         </table>
       </td>
 
-      <td width="25%">
+      <td width="50%">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td style="padding: 10px 10px 10px 0px">
-                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_red_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="center">
+                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_red_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
                   <tbody>
                     <tr>
                       <td width="47" height="50" align="right"><a href="#" style="text-decoration: none"><img src="images/favicon.png" width="35" height="35"></a></td>
@@ -1076,6 +1190,12 @@ body
           </tbody>
         </table>
       </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+<td width="7.25%"></td>
 
     </tr>
   </tbody>
