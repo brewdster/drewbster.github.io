@@ -41,6 +41,8 @@
   function gfsrch() {var gfsrch = prompt("Which font?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+"); if (gfsrch) {location.replace ('https://fonts.google.com/?query=' + gfsrch);} else {location.replace('https://fonts.google.com/');}}
   function yfsrch() {var yfsrch = prompt("Which index/stock? (^GSPC, ^IXIC, ^DJI, NVDA, GC=F)").toUpperCase(); if (yfsrch) {location.replace ('https://finance.yahoo.com/quote/' + yfsrch);} else {location.replace('https://finance.yahoo.com/');}}
 
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -824,6 +826,19 @@ body {font-family: 'Poppins'}
                   </tbody>
                 </table>
               </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td width="6%"></td>
+              <td width="88%">
+                <!--https://weatherwidget.io/-->
+                <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham, ON" data-label_2="Weather" data-font="Roboto" data-icons="Climacons Animated" data-basecolor="rgba(200, 200, 200, 0.25)" data-shadow="#6c6c6c" data-accent="rgba(200, 200, 200, 0.25)" data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#ffae20" data-suncolor="#ffae20" data-mooncolor="#ffae20" data-cloudcolor="#6a6a6a" data-cloudfill="#ffffff" data-raincolor="#4becf9" data-snowcolor="#4becf9" >Markham, ON Weather</a></div>
+              </td>
+              <td width="6%"></td>
             </tr>
           </tbody>
         </table>
