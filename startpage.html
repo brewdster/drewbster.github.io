@@ -834,13 +834,55 @@ body {font-family: 'Poppins'}
           <tbody>
             <tr>
               <td width="6%"></td>
-              <td width="88%" style="padding: 15px 0px 0px 0px">
+              <td width="88%">
                 <table width="100%" cellspacing="0" cellpadding="0" border="0" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-color:rgba(200,200,200,0.25)">
                   <tbody>
                     <tr>
                       <td>
                         <!--https://weatherwidget.io/-->
                         <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham, ON" data-label_2="7-day forecast" data-font="Roboto" data-icons="Climacons Animated" data-basecolor="" data-shadow="#6c6c6c" data-accent="rgba(200, 200, 200, 0.25)" data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#ffffff" data-suncolor="#ffff00" data-mooncolor="#ffae20" data-cloudcolor="#6a6a6a" data-cloudfill="#ffffff" data-raincolor="#4becf9" data-snowcolor="#4becf9">Markham, ON Weather</a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td width="6%"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td width="6%"></td>
+              <td width="88%" style="padding: 10px 0px 0px 0px">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-color:rgba(220,220,220,.4)">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <!--https://www.tradingview.com/widget/#charts-->
+                        <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                          {
+                            "symbols":
+                            [
+                              {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
+                              {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                              {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                              {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                              {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                              {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                              {"description": "Nvidia","proName": "NASDAQ:NVDA"}
+                            ],
+                            "isTransparent": true,
+                            "showSymbolLogo": true,
+                            "colorTheme": "light",
+                            "locale": "en"
+                          }
+                        </script>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
