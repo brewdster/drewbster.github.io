@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / v3 / 20240714-->
+<!--Drewbster / v3 / 20240716-->
 <html>
 <head>
 
@@ -41,7 +41,7 @@
   function gfsrch() {var gfsrch = prompt("Which font?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+"); if (gfsrch) {location.replace ('https://fonts.google.com/?query=' + gfsrch);} else {location.replace('https://fonts.google.com/');}}
   function yfsrch() {var yfsrch = prompt("Which index/stock? (^GSPC, ^IXIC, ^DJI, NVDA, GC=F)").toUpperCase(); if (yfsrch) {location.replace ('https://finance.yahoo.com/quote/' + yfsrch);} else {location.replace('https://finance.yahoo.com/');}}
 
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 
 </script>
 
@@ -78,7 +78,6 @@ body {font-family: 'Poppins'}
   <tbody>
     <tr>
       <td width="6%" valign="top" style="padding: 100px 0px 0px 10px; font-size: 18px; font-weight: 500; line-height: 20px; color: #2E2E2E" class="copy-shadow2">
-
         <table width="100" height="100" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
@@ -94,13 +93,11 @@ body {font-family: 'Poppins'}
             </tr>
           </tbody>
         </table>
-
         <p align="left">Nodes</p>
         <p align="left">▪  <a href="#" style="color: #000000">Home</a></p>
         <p align="left">▪  <a href="#" style="color: #00308F">Work</a></p>
         <p align="left">▪  <a href="#" style="color: #FFFFFF" class="copy-shadow1">Misc</a></p>
       </td>
-
       <td>
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
@@ -148,7 +145,7 @@ body {font-family: 'Poppins'}
                                             <tr>
                                               <td width="200" height="50" align="center">
                                                 <div class="dropdown">
-                                                  <button class="dropbtn" onclick="gsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Search</a></button>
+                                                  <button class="dropbtn" onclick="gsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Google</a></button>
                                                   <div class="dropdown-content">
                                                     <a href="#" onclick="dksrch()"><span class="bullet">🔹</span>  DuckDuckGo Web</a>
                                                     <a href="#" onclick="dimgsrch()"><span class="bullet">🔹</span>  DuckDuckGo Images</a>
@@ -464,11 +461,12 @@ body {font-family: 'Poppins'}
                                              <div class="dropdown">
                                                <button class="dropbtn">Movies</button>
                                                <div class="dropdown-content">
+                                                 <a href="https://www.hoopladigital.com/login"><span class="bullet">🔹</span>  Hoopla</a>
                                                  <a href="https://www.magellantv.com/login"><span class="bullet">🔹</span>  MagellanTV</a>
+                                                 <a href="https://www.kanopy.com/en/markham/login"><span class="bullet">🔹</span>  Kanopy</a>
                                                  <a href="https://www.tubitv.com/login"><span class="bullet">🔹</span>  Tubi</a>
                                                  <a href="https://www.disneyplus.com/home"><span class="bullet">🔹</span>  Disney+</a>
-                                                 <a href="https://www.kanopy.com/en/markham/login"><span class="bullet">🔹</span>  Kanopy</a>
-                                                 <a href="https://www.hoopladigital.com/login"><span class="bullet">🔹</span>  Hoopla</a>
+
                                                </div>
                                              </div>
                                            </td>
@@ -808,33 +806,13 @@ body {font-family: 'Poppins'}
           </tbody>
         </table>
 
-        <br>
-
-        <table width="100%" cellspacing="0" cellpadding="0" border="0">
-          <tbody>
-            <tr>
-              <td style="padding: 20px 10px 20px 10px">
-                <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                  <tbody>
-                    <tr>
-                      <td style="font-size: 30px" class="copy-shadow" width="6%" align="left">⚜️ ▪ </td>
-                      <td width="39%"><div class="hlin2"></div></td>
-                      <td style="font-size: 22px" class="copy-shadow" width="10%" align="center">▪⚜️▪🔹▪⚜️▪</td>
-                      <td widht="39%"><div class="hlin2"></div></td>
-                      <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"> ▪ ⚜️</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <p><br></p>
 
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td width="6%"></td>
-              <td width="88%" style="padding: 20px 0px 0px 0px">
+              <td width="88%" style="padding: 10px 10px 0px 10px">
                 <table width="100%" cellspacing="0" cellpadding="0" border="0" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-color:rgba(200,200,200,0.25)">
                   <tbody>
                     <tr>
@@ -855,33 +833,30 @@ body {font-family: 'Poppins'}
           <tbody>
             <tr>
               <td width="6%"></td>
-              <td width="88%" style="padding: 20px 0px 0px 0px">
+              <td width="88%" style="padding: 20px 10px 20px 10px">
                 <table width="100%" cellspacing="0" cellpadding="0" border="0" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-color:rgba(220,220,220,.4)">
                   <tbody>
                     <tr>
                       <td>
                         <!--https://www.tradingview.com/widget/#charts-->
                         <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-                          {
-                            "symbols":
-                            [
-                              {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
-                              {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
-                              {"description": "Dow Jones","proName": "SPREADEX:DJI"},
-                              {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
-                              {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
-                              {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
-                              {"description": "Nvidia","proName": "NASDAQ:NVDA"}
-                            ],
-                            "isTransparent": true,
-                            "showSymbolLogo": true,
-                            "colorTheme": "light",
-                            "locale": "en"
-                          }
-                        </script>
+                          <div class="tradingview-widget-container__widget"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                            {
+                              "symbols":
+                              [
+                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                                {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                                {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                                {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                                {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                                {"description": "Nvidia","proName": "NASDAQ:NVDA"},
+                                {"description": "Tesla","proName": "NASDAQ:TSLA"}
+                              ],
+                              "isTransparent": true,"showSymbolLogo": true,"colorTheme": "light","locale": "en"
+                            }
+                          </script>
                         </div>
                       </td>
                     </tr>
@@ -893,11 +868,30 @@ body {font-family: 'Poppins'}
           </tbody>
         </table>
 
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td style="padding: 30px 10px 0px 10px">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 30px" class="copy-shadow" width="6%" align="left">⚜️ ▪ </td>
+                      <td width="39%"><div class="hlin2"></div></td>
+                      <td style="font-size: 22px" class="copy-shadow" width="10%" align="center">▪⚜️▪🔹▪⚜️▪</td>
+                      <td widht="39%"><div class="hlin2"></div></td>
+                      <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"> ▪ ⚜️</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
       </td>
     </tr>
   </tbody>
 </table>
-
 
 </body>
 </html>
