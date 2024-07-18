@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / v3 / 20240716-->
+<!--Drewbster / v3.1 / 20240718-->
 <html>
 <head>
 
@@ -12,6 +12,7 @@
 
 <script type="text/javascript">
 
+  function ysrch() {var ysrch = prompt("Yandex search for?").replace(/&/g,"%26").replace(/ /g,"+"); if (ysrch) {location.replace ('https://www.yandex.com/search/?text=' + ysrch);} else {location.replace('https://www.yandex.com/');}}
   function dksrch() {var dksrch = prompt("DuckDuckGo search for?").replace(/&/g,"%26").replace(/ /g,"+"); if (dksrch) {location.replace ('https://www.duckduckgo.com/?q=' + dksrch + '&ia=web');} else {location.replace('https://www.duckduckgo.com/');}}
   function bsrch() {var bsrch = prompt("Bing search for?").replace(/&/g,"%26").replace(/ /g,"+"); if (bsrch) {location.replace ('https://www.bing.com/search?q='+bsrch);} else {location.replace('https://www.bing.com');}}
   function gsrch() {var gsrch = prompt("Google search for?").replace(/&/g,"%26").replace(/ /g,"+"); if (gsrch) {location.replace ('https://www.google.com/search?q=' + gsrch);} else {location.replace('https://www.google.com/');}}
@@ -155,6 +156,7 @@ body {font-family: 'Poppins'}
                                                     <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
                                                     <a href="#" onclick="omapsrch()"><span class="bullet">🔹</span>  OpenStreetMap</a>
                                                     <a href="https://maps.yango.com/?ll=60.513598%2C32.618592&z=3"><span class="bullet">🔹</span>  Yango Maps</a>
+                                                    <a href="#" onclick="ysrch()"><span class="bullet">🔹</span>  Yandex Web</a>
                                                     <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
                                                     <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                                                     <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
@@ -163,7 +165,7 @@ body {font-family: 'Poppins'}
                                                     <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
                                                     <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Bing Web</a>
                                                     <a href="#" onclick="bimgsrch()"><span class="bullet">🔹</span>  Bing Images</a>
-                                                    <a href="#" onclick="bvidsrch()"><span class="bullet">🔹</span>  Bing Videos</a>
+                                                    <!--<a href="#" onclick="bvidsrch()"><span class="bullet">🔹</span>  Bing Videos</a>-->
                                                     <a href="#" onclick="bmapsrch()"><span class="bullet">🔹</span>  Bing Maps</a>
                                                     <a href="https://translate.bing.com/"><span class="bullet">🔹</span>  Bing Translate</a>
                                                   </div>
