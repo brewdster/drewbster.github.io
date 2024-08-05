@@ -339,7 +339,7 @@
 
   function bdsrch()
     {
-      var bdsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      var bdsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26");
       if (bdsrch)
         {
             location.replace ('https://haokan.baidu.com/web/search/page?query=' + bdsrch);
