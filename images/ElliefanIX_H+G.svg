@@ -41,7 +41,7 @@
 }
 
       .cls-1 {
-        font-size: 16px;
+        font-size: 8.31px;
       }
 
       .cls-1, .cls-2 {
@@ -62,12 +62,12 @@
         fill: gray;
       }
 
-      .cls-5, .cls-7 {
-        fill: gray;
+      .cls-2 {
+        font-size: 14.77px;
       }
 
-      .cls-2 {
-        font-size: 9px;
+      .cls-5, .cls-7 {
+        fill: gray;
       }
 
       .cls-7 {
@@ -93,9 +93,9 @@
   <g id="Ear_flap" data-name="Ear flap">
     <path class="cls-7" d="M54.61,11.37c0,.62-.05,1.64-.66,2.31-.66.62-1.68.67-2.29.67h-6.52c-1.88,0-3.01,0-3.77.1-.41.05-.92.26-1.17.36-.1.05-.1,0-.05-.05L55.01-.5c.05-.05.1-.05.05.05-.1.26-.3.77-.36,1.18-.1.77-.1,1.9-.1,3.8v6.83h0ZM56.49.94"/>
   </g>
-  <g id="H_G2" data-name="H&amp;amp;G2">
-    <text class="cls-1" transform="translate(12.81 27.11)"><tspan x="0" y="0">H</tspan></text>
-    <text class="cls-2" transform="translate(25.54 30.39)"><tspan x="0" y="0">&amp;</tspan></text>
-    <text class="cls-1" transform="translate(34.54 38.51)"><tspan x="0" y="0">G</tspan></text>
+  <g id="H_G" data-name="H+G">
+    <text class="cls-2" transform="translate(11.81 32.98)"><tspan x="0" y="0">H</tspan></text>
+    <text class="cls-1" transform="translate(23.24 30.59)"><tspan x="0" y="0">+</tspan></text>
+    <text class="cls-2" transform="translate(29.38 32.98)"><tspan x="0" y="0">G</tspan></text>
   </g>
 </svg>
