@@ -389,6 +389,19 @@
         }
     }
 
+  function ytpop()
+    {
+      var ytpop = prompt("Reference?");
+      if (ytpop)
+        {
+            location.replace ('https://www.youtube.com/watch_popup?v=' + ytpop + '&mute=0&autoplay=1');
+        }
+      else
+        {
+            location.replace('https://www.youtube.com/');
+        }
+    }
+
   !function(d,s,id)
   {
     var js,fjs=d.getElementsByTagName(s)[0];
@@ -897,11 +910,12 @@ body
                                           <button class="dropbtn" onclick="ytsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Videos</a>    </button>
                                           <div class="dropdown-content">
                                             <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><span class="bullet">🔹</span>  Youtube Sports</a>
-                                            <a href="https://tv.cctv.com/cctv5/"><span class="bullet">🔹</span>  CCTV-5 Sports</a>
+                                            <a href="#" onclick="ytpop()"><span class="bullet">🔹</span>  Youtube Popup</a>
                                             <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><span class="bullet">🔹</span>  Youtube News</a>
                                             <a href="https://www.youtube.com/feed/trending"><span class="bullet">🔹</span>  Youtube Trending</a>
                                             <a href="https://accounts.google.com/signin"><span class="bullet">🔹</span>  Youtube Sign in</a>
                                             <a href="https://www.youtube.com/feed/channels"><span class="bullet">🔹</span>  Youtube Channels</a>
+                                            <a href="https://tv.cctv.com/cctv5/"><span class="bullet">🔹</span>  CCTV-5 Sports</a>
                                             <a href="#" onclick="bbsrch()"><span class="bullet">🔹</span>   哔哩哔哩 Bilibili</a>
                                             <a href="#" onclick="bdsrch()"><span class="bullet">🔹</span>   百度好看 Baidu</a>
                                           </div>
