@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--'Drewbster' / v1.5 / 20240826-->
+<!--'Drewbster' / v1.5 / 20241007-->
 <html>
 <head>
 
@@ -399,6 +399,19 @@
       else
         {
             location.replace('https://www.youtube.com/');
+        }
+    }
+
+  function rsrch()
+    {
+      var rsrch = prompt("Search for?");
+      if (rsrch)
+        {
+            location.replace ('https://rumble.com/search/all?q=' + rsrch);
+        }
+      else
+        {
+            location.replace('https://rumble.com/');
         }
     }
 
@@ -917,6 +930,7 @@ body
                                             <a href="https://www.youtube.com/feed/trending"><span class="bullet">🔹</span>  Youtube Trending</a>
                                             <a href="https://accounts.google.com/signin"><span class="bullet">🔹</span>  Youtube Sign in</a>
                                             <a href="https://www.youtube.com/feed/channels"><span class="bullet">🔹</span>  Youtube Channels</a>
+                                            <a href="#" onclick="rsrch()"><span class="bullet">🔹</span>  Rumble</a>
                                             <a href="https://tv.cctv.com/cctv5/"><span class="bullet">🔹</span>  CCTV-5 Sports</a>
                                             <a href="#" onclick="bbsrch()"><span class="bullet">🔹</span>   哔哩哔哩 Bilibili</a>
                                             <a href="#" onclick="bdsrch()"><span class="bullet">🔹</span>   百度好看 Baidu</a>
