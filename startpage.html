@@ -415,6 +415,19 @@
         }
     }
 
+  function shsrch()
+    {
+      var shsrch = prompt("Search for?");
+      if (shsrch)
+        {
+            location.replace ('https://ca.shein.com/pdsearch/' + shsrch);
+        }
+      else
+        {
+            location.replace('https://ca.shein.com/');
+        }
+    }
+
   !function(d,s,id)
   {
     var js,fjs=d.getElementsByTagName(s)[0];
@@ -1030,6 +1043,7 @@ body
                                             <a href="#" onclick="airsrch()"><span class="bullet">🔹</span>  Air Miles</a>
                                             <a href="#" onclick="stplsrch()"><span class="bullet">🔹</span>  Staples</a>
                                             <a href="#" onclick="bestsrch()"><span class="bullet">🔹</span>  BestBuy</a>
+                                            <a href="#" onclick="shsrch()"><span class="bullet">🔹</span>  Shein</a>
                                             <a href="https://www.kijiji.ca/b-gta-greater-toronto-area/mechanical-keyboard/k0l1700272?dc=true"><span class="bullet">🔹</span>  Kijiji</a>
                                           </div>
                                         </div>
